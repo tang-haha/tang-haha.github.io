@@ -6,8 +6,16 @@
 	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500,700" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="./css/Cstyle.css">
 	<link rel="stylesheet" href="./css/bootstrap.css" id="theme-color">
-
-
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="./js/jquery-1.10.2.js"></script>
+	<script>
+		$(document).ready(function(){
+				$("#page_title").fadeIn(1000,function(){
+				$("#basic").fadeIn(1000);
+				$("#media").fadeIn(1000);
+			});
+		});
+	</script>
 	
 </head>
 
@@ -54,14 +62,16 @@
 	<div id="media" class="contact_contener" style="left: 55%; display: block;">
 		<h3>Social media</h3>
 		<div style="width:100%"><img src="./img/line.png" width="100%" height="5px"></div>
-		<div style="width:33%; float:left"><a target="_blank" href="https://www.facebook.com/profile.php?id=100001097045607"><img class="social" src="./pics/weixin.png"></a></div>
+		<div style="width:33%; float:left"><a target="social"id="wechat_link"><img class="social" src="./pics/weixin.png"></a></div>
 	
 
 		<div style="width:33%; float:left"><a target="_blank" href=""><img class="social" src="./pics/logo.png"></a></div>
 		
-		<div style="width:33%; float:left"><img class="social" id="wechat_link" src="./pics/facebook.png" style="cursor:pointer;"></div>
+		<div style="width:33%; float:left"><img class="social" src="./pics/facebook.png" style="cursor:pointer;"></div>
 	</div>
-
+	<div id="wechat_QR" class="wechat" style="display: none;">
+		<img src="./pics/ma.png" style="position:absolute; margin:auto; top:0; left:0; bottom:0;right:0;">
+	</div>
 	<div id="footer" class="footer">
 		<script type="text/javascript">
 		//add content to html
@@ -75,8 +85,17 @@
 
 	</script>
 	<script src="./time_script.js"></script>
-</div>
+	<script>
+		$( "#wechat_link" ).click(function() {
+			$("#wechat_QR").fadeIn(2000);
+			// console.log("click");
+		});
+		$("#wechat_QR").click(function(){
+			$(this).fadeOut(1000);
+
+		});
+	</script>
+	<div id="qb-sougou-search" style="display: none; opacity: 0;"><p>搜索</p><p class="last-btn">复制</p><iframe src=""></iframe></div>
 	
-</body>
 </body>
 </html>
