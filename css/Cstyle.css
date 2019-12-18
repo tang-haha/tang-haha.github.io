@@ -68,23 +68,7 @@ body.bg{
 	font-family: 'tylesheet', Arial, sans-serif;
 }
 
-a{
-	color:#000;
-	text-decoration:none;
-	font-size: 10px;
-	font-weight: bold;
-	opacity: 0.5;
-}
 
-a:hover{
-	font-weight:bold;
-	color:#000;
-	opacity: 1.0;
-}
-
-a.img{
-	opacity: 1.0;
-}
 
 div.index_title{
 	position: absolute;
@@ -104,11 +88,12 @@ vertical-align: middle;*/
 
 div.footer{
 	position:absolute;
+	font-size: 15px;
 	bottom:15px;
 	width:100%;
 	text-align: center;
 	color:#000;
-	font-size: 8px;
+	
 }
 
 img.index_icon{
@@ -180,7 +165,7 @@ border:none;
 li{
 	padding: 5px;
 /*margin-bottom: 5px;	*/
-font-size: 15px;
+font-size: 25px;
 color: #000;
 }
 
@@ -211,7 +196,7 @@ h3{
 
 p{
 	font-size: 13px;
-	width:98%;
+	width:100%;
 }
 
 p.note{
@@ -257,3 +242,4 @@ td{
 	padding: 5px;
 	font-size: 10px;
 }
+
