@@ -76,7 +76,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem; }
+  margin-bottom: 0.1rem; }
 
 abbr[title],
 abbr[data-original-title] {
@@ -107,7 +107,7 @@ dt {
   font-weight: 700; }
 
 dd {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   margin-left: 0; }
 
 blockquote {
@@ -2912,8 +2912,8 @@ tbody.collapse.show {
 
 .navbar-text {
   display: inline-block;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem; }
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem; }
 
 .navbar-collapse {
   -ms-flex-preferred-size: 100%;
@@ -2998,7 +2998,7 @@ tbody.collapse.show {
       -ms-flex-direction: row;
           flex-direction: row; }
       .navbar-expand-md .navbar-nav .dropdown-menu {
-        position: absolute; }
+        position: absolute left:20%; }
       .navbar-expand-md .navbar-nav .dropdown-menu-right {
         right: 0;
         left: auto; }
@@ -5626,7 +5626,7 @@ button.bg-dark:focus {
 
 .pt-5,
 .py-5 {
-  padding-top: 3rem !important; }
+  padding-top: 1rem !important; }
 
 .pr-5,
 .px-5 {
