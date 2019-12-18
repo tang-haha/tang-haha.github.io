@@ -3,14 +3,18 @@
 <head>
 
 	<title>  CONTACT ME</title>
-	<link rel="stylesheet" type="text/css" href="./css/Cstyle.css">
-	<link rel="stylesheet" href="./css/font-awesome.min.css">
-	<link rel="stylesheet" href="./css/bootstrap.css" id="theme-color">
 	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./css/Cstyle.css">
+	<link rel="stylesheet" href="./css/bootstrap.css" id="theme-color">
+
+
 	
 </head>
 
-<body id="body_bg" class="bg" >
+<body>
+<canvas id="canvas" ></canvas>
+<script src="./js/TweenMax.min.js"></script>
+<script  src="./js/script.js"></script>
 <section class="smart-scroll">
 <div class="container-fluid">
 	<nav class="navbar navbar-expand-md navbar-light">
@@ -58,23 +62,21 @@
 		<div style="width:33%; float:left"><img class="social" id="wechat_link" src="./pics/facebook.png" style="cursor:pointer;"></div>
 	</div>
 
-	<div id="wechat_QR" class="wechat">
-		<img src="./pics/ma.png" style="position:absolute; margin:auto; top:0; left:0; bottom:0;right:0;">
-	</div>
+	<div id="footer" class="footer">
+		<script type="text/javascript">
+		//add content to html
+		var now = new Date();
+		var hour = now.getHours();
+		var min = now.getMinutes();
+		var sec = now.getSeconds();
+		document.write("<p>");
+		document.write(hour + ":" + min + ":" + sec);
+		document.write("<p>");
 
-	<div id="footer" class="footer">-- Last update: 2019.11 --</div>
-
-	<script>
-		$( "#wechat_link" ).click(function() {
-			$("#wechat_QR").fadeIn(2000);
-			// console.log("click");
-		});
-		$("#wechat_QR").click(function(){
-			$(this).fadeOut(1000);
-
-		});
 	</script>
-
+	<script src="./time_script.js"></script>
+</div>
+	
 </body>
 </body>
 </html>
